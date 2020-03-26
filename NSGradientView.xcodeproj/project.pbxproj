@@ -8,11 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		9653C721242CF92C00CBB25E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9653C720242CF92C00CBB25E /* AppDelegate.swift */; };
-		9653C723242CF92C00CBB25E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9653C722242CF92C00CBB25E /* ViewController.swift */; };
 		9653C725242CF92D00CBB25E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9653C724242CF92D00CBB25E /* Assets.xcassets */; };
 		9653C728242CF92D00CBB25E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9653C726242CF92D00CBB25E /* Main.storyboard */; };
 		9653C734242CF92D00CBB25E /* NSGradientViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9653C733242CF92D00CBB25E /* NSGradientViewTests.swift */; };
 		9653C73F242CF92D00CBB25E /* NSGradientViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9653C73E242CF92D00CBB25E /* NSGradientViewUITests.swift */; };
+		9653C753242CF9F300CBB25E /* NSGradient+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9653C74E242CF9F300CBB25E /* NSGradient+Extension.swift */; };
+		9653C754242CF9F300CBB25E /* NSGradientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9653C750242CF9F300CBB25E /* NSGradientModel.swift */; };
+		9653C755242CF9F300CBB25E /* NSGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9653C752242CF9F300CBB25E /* NSGradientView.swift */; };
+		9653C757242CFA8700CBB25E /* GradientViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9653C756242CFA8700CBB25E /* GradientViewController.swift */; };
+		9653C75A242CFB1C00CBB25E /* GradientCollectionViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9653C758242CFB1C00CBB25E /* GradientCollectionViewItem.swift */; };
+		9653C75B242CFB1C00CBB25E /* GradientCollectionViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9653C759242CFB1C00CBB25E /* GradientCollectionViewItem.xib */; };
+		9653C75E242CFB6100CBB25E /* GradientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9653C75D242CFB6100CBB25E /* GradientViewModel.swift */; };
+		9653C760242CFBB800CBB25E /* GradientItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9653C75F242CFBB800CBB25E /* GradientItemModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +42,6 @@
 /* Begin PBXFileReference section */
 		9653C71D242CF92C00CBB25E /* NSGradientView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSGradientView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9653C720242CF92C00CBB25E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9653C722242CF92C00CBB25E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9653C724242CF92D00CBB25E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9653C727242CF92D00CBB25E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9653C729242CF92D00CBB25E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -46,6 +52,14 @@
 		9653C73A242CF92D00CBB25E /* NSGradientViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NSGradientViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9653C73E242CF92D00CBB25E /* NSGradientViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSGradientViewUITests.swift; sourceTree = "<group>"; };
 		9653C740242CF92D00CBB25E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9653C74E242CF9F300CBB25E /* NSGradient+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSGradient+Extension.swift"; sourceTree = "<group>"; };
+		9653C750242CF9F300CBB25E /* NSGradientModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSGradientModel.swift; sourceTree = "<group>"; };
+		9653C752242CF9F300CBB25E /* NSGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSGradientView.swift; sourceTree = "<group>"; };
+		9653C756242CFA8700CBB25E /* GradientViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientViewController.swift; sourceTree = "<group>"; };
+		9653C758242CFB1C00CBB25E /* GradientCollectionViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientCollectionViewItem.swift; sourceTree = "<group>"; };
+		9653C759242CFB1C00CBB25E /* GradientCollectionViewItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GradientCollectionViewItem.xib; sourceTree = "<group>"; };
+		9653C75D242CFB6100CBB25E /* GradientViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientViewModel.swift; sourceTree = "<group>"; };
+		9653C75F242CFBB800CBB25E /* GradientItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientItemModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,12 +110,11 @@
 		9653C71F242CF92C00CBB25E /* NSGradientView */ = {
 			isa = PBXGroup;
 			children = (
-				9653C720242CF92C00CBB25E /* AppDelegate.swift */,
-				9653C722242CF92C00CBB25E /* ViewController.swift */,
-				9653C724242CF92D00CBB25E /* Assets.xcassets */,
-				9653C726242CF92D00CBB25E /* Main.storyboard */,
-				9653C729242CF92D00CBB25E /* Info.plist */,
-				9653C72A242CF92D00CBB25E /* NSGradientView.entitlements */,
+				9653C75C242CFB5000CBB25E /* ViewModel */,
+				9653C74D242CF9F300CBB25E /* Extension */,
+				9653C74F242CF9F300CBB25E /* Model */,
+				9653C751242CF9F300CBB25E /* View */,
+				9653C761242D090000CBB25E /* Supporting Files */,
 			);
 			path = NSGradientView;
 			sourceTree = "<group>";
@@ -122,6 +135,54 @@
 				9653C740242CF92D00CBB25E /* Info.plist */,
 			);
 			path = NSGradientViewUITests;
+			sourceTree = "<group>";
+		};
+		9653C74D242CF9F300CBB25E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9653C74E242CF9F300CBB25E /* NSGradient+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		9653C74F242CF9F300CBB25E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9653C750242CF9F300CBB25E /* NSGradientModel.swift */,
+				9653C75F242CFBB800CBB25E /* GradientItemModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9653C751242CF9F300CBB25E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9653C752242CF9F300CBB25E /* NSGradientView.swift */,
+				9653C756242CFA8700CBB25E /* GradientViewController.swift */,
+				9653C758242CFB1C00CBB25E /* GradientCollectionViewItem.swift */,
+				9653C759242CFB1C00CBB25E /* GradientCollectionViewItem.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9653C75C242CFB5000CBB25E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9653C75D242CFB6100CBB25E /* GradientViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9653C761242D090000CBB25E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9653C720242CF92C00CBB25E /* AppDelegate.swift */,
+				9653C724242CF92D00CBB25E /* Assets.xcassets */,
+				9653C726242CF92D00CBB25E /* Main.storyboard */,
+				9653C729242CF92D00CBB25E /* Info.plist */,
+				9653C72A242CF92D00CBB25E /* NSGradientView.entitlements */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +289,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9653C75B242CFB1C00CBB25E /* GradientCollectionViewItem.xib in Resources */,
 				9653C725242CF92D00CBB25E /* Assets.xcassets in Resources */,
 				9653C728242CF92D00CBB25E /* Main.storyboard in Resources */,
 			);
@@ -254,7 +316,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9653C723242CF92C00CBB25E /* ViewController.swift in Sources */,
+				9653C760242CFBB800CBB25E /* GradientItemModel.swift in Sources */,
+				9653C75A242CFB1C00CBB25E /* GradientCollectionViewItem.swift in Sources */,
+				9653C75E242CFB6100CBB25E /* GradientViewModel.swift in Sources */,
+				9653C755242CF9F300CBB25E /* NSGradientView.swift in Sources */,
+				9653C754242CF9F300CBB25E /* NSGradientModel.swift in Sources */,
+				9653C757242CFA8700CBB25E /* GradientViewController.swift in Sources */,
+				9653C753242CF9F300CBB25E /* NSGradient+Extension.swift in Sources */,
 				9653C721242CF92C00CBB25E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

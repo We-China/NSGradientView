@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="16096" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16096"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="GradientCollectionViewItem" customModule="NSGradientView" customModuleProvider="target">
+            <connections>
+                <outlet property="gradientView" destination="Dmk-kK-0p3" id="c6E-t6-4J0"/>
+                <outlet property="itemTextField" destination="GSc-Z2-Pfr" id="0yO-ts-Rbc"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="480" height="272"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GSc-Z2-Pfr">
+                    <rect key="frame" x="14" y="240" width="452" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="ag4-Ls-Lux">
+                        <font key="font" usesAppearanceFont="YES"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <customView translatesAutoresizingMaskIntoConstraints="NO" id="Dmk-kK-0p3" customClass="NSGradientView" customModule="NSGradientView" customModuleProvider="target">
+                    <rect key="frame" x="16" y="17" width="448" height="207"/>
+                </customView>
+                <box verticalHuggingPriority="750" boxType="separator" translatesAutoresizingMaskIntoConstraints="NO" id="xN3-UH-Enj">
+                    <rect key="frame" x="16" y="-2" width="448" height="5"/>
+                </box>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="GSc-Z2-Pfr" secondAttribute="trailing" constant="16" id="0Oy-bU-Cim"/>
+                <constraint firstItem="Dmk-kK-0p3" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="16" id="7h6-4A-BuU"/>
+                <constraint firstItem="GSc-Z2-Pfr" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="16" id="BIE-ga-kem"/>
+                <constraint firstAttribute="bottom" secondItem="xN3-UH-Enj" secondAttribute="bottom" id="HjA-vt-LhM"/>
+                <constraint firstItem="xN3-UH-Enj" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="16" id="NTI-Ax-PDJ"/>
+                <constraint firstAttribute="trailing" secondItem="Dmk-kK-0p3" secondAttribute="trailing" constant="16" id="edd-Lv-8m2"/>
+                <constraint firstItem="GSc-Z2-Pfr" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="16" id="muK-VK-w1V"/>
+                <constraint firstItem="xN3-UH-Enj" firstAttribute="top" secondItem="Dmk-kK-0p3" secondAttribute="bottom" constant="16" id="sg1-OV-s4d"/>
+                <constraint firstItem="Dmk-kK-0p3" firstAttribute="top" secondItem="GSc-Z2-Pfr" secondAttribute="bottom" constant="16" id="t58-zp-4N7"/>
+                <constraint firstAttribute="trailing" secondItem="xN3-UH-Enj" secondAttribute="trailing" constant="16" id="v1r-FO-knG"/>
+            </constraints>
+            <point key="canvasLocation" x="140" y="154"/>
+        </customView>
+    </objects>
+</document>
